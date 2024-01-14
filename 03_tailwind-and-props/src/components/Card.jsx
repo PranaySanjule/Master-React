@@ -2,6 +2,7 @@
 
 function Card({ username, btnText }) {
   console.log("props", username);
+  console.log("props", myObject);
   return (
     <div className="relative h-[400px] w-[300px] rounded-md mt-4">
       <img
@@ -18,6 +19,9 @@ function Card({ username, btnText }) {
         </p>
         <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
           {btnText} →
+        </button>
+        <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+          {myObject.age} →
         </button>
       </div>
     </div>
